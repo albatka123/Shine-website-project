@@ -47,6 +47,25 @@ a {
     opacity: 0.9;
     cursor: pointer;
 }
+
+.section__heading {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -2%;
+    color: #10375c;
+}
+
+.section__desc {
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.66; /* 166.667% */
+}
+
 /* ============================ HEADER =============================== */
 .header {
     min-height: 100vh;
@@ -215,4 +234,145 @@ a {
 .hero__img:last-child {
     width: 210px;
     height: 410px;
+}
+/* ========== SERVICE =============== */
+.service {
+    padding: 170px 0;
+}
+
+.service__heading,
+.service__desc {
+    text-align: center;
+}
+
+.service__desc {
+    width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service__row {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+/* -------- Service Items ----------- */
+.service-item {
+    display: flex;
+    width: 470px;
+    padding: 22px;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.service-item:hover {
+    position: relative;
+    box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover .service-item__icon {
+    background: #2e80ce;
+    color: #fff;
+}
+
+.service-item__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #eff6fd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    color: #10375c;
+    transition: 0.25s;
+}
+
+.service-item__body {
+    margin-left: 20px;
+}
+
+.service-item__heading {
+    color: #10375c;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.27;
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    color: #575f66;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.service__list {
+    margin-bottom: 55px;
+}
+/* ============== HOW IT WORK PAGE ==================== */
+.work {
+    padding: 100px 0;
+    background: #f6fbff;
+}
+
+.work__desc {
+    width: 468px;
+}
+
+.work__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.work-item {
+    padding: 44px;
+    border: 16px solid #eaf6ff;
+    border-radius: 4px;
+    transition: 0.25s;
+}
+
+.work-item:hover {
+    border-color: #2e80ce;
+    transform: translateY(-16px);
+}
+
+.work-item__heading {
+    margin-top: 20px;
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38; /* 138.462% */
+}
+
+.work-item__desc {
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.work-item__more {
+    display: inline-block;
+    margin-top: 18px;
+    color: #2e80ce;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
 }
